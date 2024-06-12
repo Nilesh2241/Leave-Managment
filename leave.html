@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+
+    <h1>Leave Management</h1>
+    <form action="" id="leave-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" required>
+
+        <label for="start-date">Start date:</label>
+        <input type="date" id="start-date" required>
+
+        <label for="end-date">End date:</label>
+        <input type="date" id="end-date" required>
+
+        <label for="reason">Reason:</label>
+        <input type="text" id="reason" required>
+
+        <label for="leave-type">Leave Type:</label>
+        <select id="leave-type" required>
+            <option value="casual">Casual</option>
+            <option value="sick">Sick</option>
+            <option value="half-day">Half Day</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Leave Requests</h1>
+    <table id="leave-request">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Reason</th>
+                <th>Leave Type</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+   </div>
+
+   <script src="leave.js"></script>
+</body>
+</html>
